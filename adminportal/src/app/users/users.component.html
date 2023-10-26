@@ -1,0 +1,23 @@
+<div class="container">
+    <table class="table align-content-center">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let item of users">
+            <th scope="row" >{{item.id}}</th>
+            <td>{{item.first}}</td>
+            <td>{{item.last}}</td>
+            <td>
+                <button routerLink="user/{{item.id}}" class="btn btn-success">View User</button>
+                <button class="btn btn-danger ms-2" routerLink="user/edit/{{item.id}}">Edit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>

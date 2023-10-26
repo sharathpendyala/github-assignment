@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="form">
+      <form [formGroup]="reactiveForm" (ngSubmit)="onsubmit()">
+        <div>
+          <label for="id">ID</label>
+          <input type="text" class="ms-6" formControlName = "id">
+          <br>
+          <label for="firstname">Firstname</label>
+          <input type="text" class="ms-4 mt-2" formControlName = "firstname"/>
+          <br />
+        </div>
+        <div class="mt-2">
+          <label for="Lastname">Lastname</label>
+          <input type="text" class="ms-4" formControlName = "lastname" />
+          <br />
+        </div>
+        <button class="btn btn-primary mt-2">Submit</button>
+      </form>
+    </div>
+  </div>
+  
